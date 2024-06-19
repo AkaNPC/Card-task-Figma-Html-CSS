@@ -1,4 +1,4 @@
-/* Сбрасываем стили по умолчанию */
+/* Сбрасываем стили по умолчанию / Reset default styles */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,7 +58,7 @@ table {
         "slnt"0;
 }
 
-/* Используем некоторые глобальные настройки для удобства */
+/* Используем некоторые глобальные настройки для удобства / Use some global useful styles */
 html {
     box-sizing: border-box;
 }
@@ -67,7 +67,7 @@ html {
     box-sizing: inherit;
 }
 
-/* Добавленные стили для макета */
+/* Добавленные стили для макета / Custom styles for html elements */
 body {
     display: flex;
     justify-content: center;
@@ -186,6 +186,7 @@ svg {
 }
 
 /* Калькулируем заполнение прогресс-бара. Задаем значение в процентах (от 0 до 100) в переменную percentage-value */
+/* Change variable --percentage-value for rendering current progress (values from 0 to 100 percents) in SVG circle */
 :root {
     --percentage-value: 50;
     --current-bar-progress: calc(182 - (var(--percentage-value)*1.82));
