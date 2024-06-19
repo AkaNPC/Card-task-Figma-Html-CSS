@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Чеклист</title>
+</head>
+<body>
+   <div class="checklist-card">
+    <div class="checklist-card__tasks-progress-bar">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="transform: rotate(-90deg)" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29.5" stroke="white" stroke-width="1px" stroke-opacity="0.5"/>
+            <circle class="checklist-card__current-progress-bar" cx="30" cy="30" r="29" stroke="white" stroke-width="2px" stroke-dasharray="182px"/>
+        </svg>
+    </div>
+    <span class="checklist-card__progress-count">0/7</span>
+    <div class="checklist-card__texts">
+        <h3 class="checklist-card__name">Чеклист</h3>
+        <span class="checklist-card__completed-tasks">Выполнено: 0 из 7 действий</span>
+        <span class="checklist-card__next-task">Следующее действие: Созвониться с клиентом до 23.05.24 12:00</span>
+    </div>
+    <button class="checklist-card__button">Открыть чеклист</button>
+   </div>
+</body>
+</html>

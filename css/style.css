@@ -1,0 +1,196 @@
+/* Сбрасываем стили по умолчанию */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+/* Используем некоторые глобальные настройки для удобства */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Добавленные стили для макета */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.checklist-card {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #3579F5;
+    width: 743px;
+    height: 91px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    padding: 0px;
+}
+
+.checklist-card .checklist-card__tasks-progress-bar {
+    display: flex;
+    margin-left: 22px;
+    margin-top: 16px;
+    margin-right: 0px;
+    padding: 0;
+}
+
+.checklist-card .checklist-card__progress-count {
+    margin-left: 36px;
+    margin-top: 31px;
+    width: 32px;
+    height: 30px;
+    padding: 0px;
+    gap: 0px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+}
+
+.checklist-card .checklist-card__texts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.checklist-card .checklist-card__name {
+    width: 76px;
+    height: 18px;
+    top: 12px;
+    left: 98px;
+    padding: 0px 10px 0px 10px;
+    gap: 10px;
+    border-radius: 40px;
+    opacity: 0px;
+    background-color: #2364DB;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.checklist-card .checklist-card__completed-tasks {
+    width: 211px;
+    height: 20px;
+    top: 34px;
+    left: 98px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+
+.checklist-card .checklist-card__next-task {
+    width: 389px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+
+.checklist-card .checklist-card__button {
+    margin-left: 68px;
+    margin-top: 26px;
+    width: 170px;
+    height: 40px;
+    padding: 10px 32px 10px 32px;
+    gap: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F4F8FF;
+    color: #4777ED;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+}
+
+/* Калькулируем заполнение прогресс-бара. Задаем значение в процентах (от 0 до 100) в переменную percentage-value */
+:root {
+    --percentage-value: 50;
+    --current-bar-progress: calc(182 - (var(--percentage-value)*1.82));
+}
+
+.checklist-card__current-progress-bar {
+    stroke-dashoffset: var(--current-bar-progress);
+}
