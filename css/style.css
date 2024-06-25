@@ -71,6 +71,7 @@ html {
 body {
     display: flex;
     justify-content: center;
+    font-family: "Inter";
 }
 
 .checklist-card {
@@ -101,17 +102,11 @@ body {
     height: 30px;
     padding: 0px;
     gap: 0px;
-    font-family: "Inter";
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     color: #FFFFFF;
     position: absolute;
-}
-
-svg {
-    margin: 0;
-    padding: 0;
 }
 
 .checklist-card .checklist-card__texts {
@@ -131,7 +126,6 @@ svg {
     border-radius: 40px;
     opacity: 0px;
     background-color: #2364DB;
-    font-family: "Inter";
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -146,7 +140,6 @@ svg {
     left: 98px;
     gap: 0px;
     opacity: 0px;
-    font-family: "Inter";
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -159,7 +152,6 @@ svg {
     height: 18px;
     gap: 0px;
     opacity: 0px;
-    font-family: "Inter";
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -178,7 +170,6 @@ svg {
     border-radius: 6px;
     background-color: #F4F8FF;
     color: #4777ED;
-    font-family: "Inter";
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
